@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.project.WorkerConsole">
+   <children>
+      <Label layoutX="214.0" layoutY="26.0" prefHeight="26.0" prefWidth="135.0" text="Worker Console">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="70.0" prefHeight="26.0" prefWidth="135.0" text="Worker Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="wname" layoutX="70.0" layoutY="96.0" prefHeight="26.0" prefWidth="218.0" />
+      <Label layoutX="73.0" layoutY="137.0" prefHeight="26.0" prefWidth="71.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="wadd" layoutX="69.0" layoutY="163.0" prefHeight="26.0" prefWidth="218.0" />
+      <TextField fx:id="wphone" layoutX="324.0" layoutY="163.0" prefHeight="26.0" prefWidth="218.0" />
+      <Label layoutX="324.0" layoutY="137.0" prefHeight="26.0" prefWidth="114.0" text="Mobile Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="211.0" prefHeight="26.0" prefWidth="114.0" text="Specialization">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="getspcl" layoutX="324.0" layoutY="236.0" prefHeight="26.0" prefWidth="218.0" />
+      <Button layoutX="153.0" layoutY="442.0" mnemonicParsing="false" onAction="#dosave" prefHeight="26.0" prefWidth="104.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="297.0" layoutY="442.0" mnemonicParsing="false" onAction="#donext" prefHeight="26.0" prefWidth="104.0" text="New">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listspcl" layoutX="59.0" layoutY="238.0" onMouseClicked="#doadd" prefHeight="182.0" prefWidth="171.0" />
+   </children>
+</AnchorPane>
